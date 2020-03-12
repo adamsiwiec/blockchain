@@ -3,18 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Stanford's Guide to the Blockchain
 subtitle: ''
 description: ''
-keywords:
-author: John Doe
+keywords: blockchain bitcoin cryptocurrency
+author: Stanford CS58N Team
 language: en
 timezone: ''
 
+minify:
+  enable: true
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://siwiec.us/blockchain
-root: /blockchain/
+url: https://cs58n.ml
+root: /
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -52,6 +55,12 @@ highlight:
   wrap: true
   hljs: false
 
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
+  instanceName: "uniqueString"
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -98,4 +107,6 @@ theme: hermes
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: aws-s3
+  region: us-west-1
+  bucket: cs58n.ml
