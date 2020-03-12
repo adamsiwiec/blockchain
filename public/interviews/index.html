@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Interviews · Stanford's Guide to the Blockchain</title><meta name="description" content="Interviews - Stanford CS58N Team"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="../favicon.png"><link rel="stylesheet" href="../css/hermes.css"><link rel="search" type="application/opensearchdescription+xml" href="https://cs58n.ml/atom.xml" title="Stanford's Guide to the Blockchain"><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="atom.xml" title="Stanford's Guide to the Blockchain" type="application/atom+xml">
+</head><body><div class="wrap"><header><a class="logo-link" href="../index.html"><img src="../favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a class="nav-list-link" href="../index.html" target="_self">BLOG</a></li><li class="nav-list-item"><a class="nav-list-link" href="../archives/" target="_self">ARCHIVE</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Interviews</h1><div class="post-info">Mar 8, 1776</div><div class="post-content"><p>Our class recorded a few interviews with other students and with our professor, John Mitchell to give different perspectives on blockchain applications. Click on the three bars to display all the interviews.</p><a id="more"></a><div id="cplayer-97093252"></div><script>(function(){
+        function loadcplayer() {
+          if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
+          if (typeof window.cplayerList["cplayer-97093252"] !== 'undefined') return;
+          if (!cplayer.prototype.add163) cplayer.prototype.add163 = function add163(id) {
+            if (!id) throw new Error("Unable Property.");
+            return fetch("https://music.huaji8.top/?id=" + id).then(function(res){return res.json()}).then(function(data){
+              let obj = {
+                name: data.info.songs[0].name,
+                artist: data.info.songs[0].ar.map(function(ar){ return ar.name }).join(','),
+                poster: data.pic.url,
+                lyric: data.lyric.lyric,
+                sublyric: data.lyric.tlyric,
+                src: data.url.url
+              }
+              this.add(obj);
+              return obj;
+            }.bind(this))
+          }
+
+          window.cplayerList["cplayer-97093252"] = new cplayer({
+            element: document.getElementById("cplayer-97093252"),
+            playlist: [{"name":"Mark and Marcelo on International Trade","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/Mark_Marcelo_IntlTrade.m4a"},{"name":"John Mitchell Part 1","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/Mitchell+interview+part+1.m4a"},{"name":"John Mitchell Part 2","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/mitchell+interview+part+2.m4a"},{"name":"Healthcare","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/Healthcare.m4a"},{"name":"Samuel on Finance Part 1","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/Samuel+Finance+Part+1.m4a"},{"name":"Samuel on Finance Part 2","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/Samuel+Finance+Part+2.m4a"},{"name":"Fahad on Finance","poster":"https://identity.stanford.edu/img/SU_New_BlockStree_Red_darkbgrd.png","src":"https://s3-us-west-1.amazonaws.com/cs58n.ml/Fahad_Nabi+Interview.m4a"}],
+            generateBeforeElement: true,
+            deleteElementAfterGenerate: true,
+            autoplay: false
+          });
+
+          
+        }
+        
+        if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
+          var js = document.createElement("script");
+          js.src = 'https://cdn.jsdelivr.net/gh/MoePlayer/cPlayer/dist/cplayer.js';
+          js.id = "cplayer-script";
+          js.addEventListener("load", loadcplayer);
+          document.body.appendChild(js);
+        } else {
+          window.addEventListener("load", loadcplayer);
+        }
+      })()</script></div></article></div></main><footer><div class="paginator"><a class="prev" href="../cryptography/">PREV</a><a class="next" href="../applications-of-blockchain/">NEXT</a></div><div class="copyright"><p>Made with ♡ by the CS 58N class at Stanford</p><p>© 2020 Adam Siwiec and Co.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
